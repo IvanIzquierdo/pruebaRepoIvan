@@ -1,0 +1,132 @@
+footer{ 
+background-color: blue;
+margin-top: 10px;
+display: flex;
+align-items: baseline;
+}
+.flex p{
+    width: 50%;
+}
+.flex img{
+    width: 50%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+nav{
+background-color: beige;
+padding: 10px;
+}
+li{
+    display: inline-block;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+.sobrenos-imgs{
+    display: flex;
+max-width:100% ;
+    }
+    .sobrenos-imgs img{
+    width: 50%;
+    height: auto;
+    }
+.estadisticas{
+    background-image: url(estadisticas.jpg);
+    background-size: cover;
+    
+    background-position: center;
+    padding: 100px;
+
+}
+.estadisticas table{
+    background-color: white;
+}
+.estadisticas div{
+    background: white;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas: "img1 img1 img2 img2 img3 img3"
+                         "img4 img4 img5 img5 img6 img6";
+    gap:10px 10px;
+    overflow: hidden;
+}
+.galeria img{
+   height: 100%;
+   width: 100%;
+}
+#imagen1{ grid-area: img1;}
+#imagen2{ grid-area: img2;}
+#imagen3{ grid-area: img3;}
+#imagen4{ grid-area: img4;}
+#imagen5{ grid-area: img5;}
+#imagen6{ grid-area: img6;}
+.tabla{
+    background-color: yellow;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.comparacion{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: yellowgreen;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#formulario{
+    background-color: plum;
+    margin: 50px 50px 30px 30px;
+    max-width: 50vw;
+    margin:0 auto;
+}
+
+@media (max-width:768px) {
+    .flex {
+        flex-direction: column;
+    }
+    .galeria{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,300px);
+        grid-template-areas: "img1 img1 img2 img2"
+                             "img3 img3 img4 img4"
+                             "img5 img5 img6 img6";
+    }
+}
+.queBuscamos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:"p1 p1 p2 p2";
+    gap: 20px;
+}
+#p1{
+    grid-area: p1;
+}
+#p2{
+    grid-area: p2;
+}
+img{
+    transition: transform .25s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
